@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Erins Photography</title>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+
+</head>
+<body>
+<div id="wrapper">
+<h1>Erins Photography</h1> 
+<nav id='desktop'>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="price.html">Prices</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Gallery</a>
+      <div class="dropdown-content">
+        <a href="gallerynature.html">Animals</a>
+        <a href="gallerypeople.html">People</a>
+        <a href="gallerymisc.html">Nature</a>
+      </div>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+
+<nav id="mobile">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="price.html">Prices</a></li>
+    <li><a href="gallerynature.html">Animals</a></li>
+    <li><a href="gallerypeople.html">People</a></li>
+    <li><a href="gallerymisc.html">Nature</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+      <div id="gallery">
+
+      <a href="images/people1.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people1t.jpg" alt="">
+        </figure>
+      </a>
+
+      <a href="images/people2.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people2t.jpg" alt="">
+        </figure>
+      </a>
+
+      <a href="images/people3.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people3t.jpg" alt="">
+        </figure>
+      </a>
+
+      <a href="images/people4.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people4t.jpg" alt="">
+        </figure>
+      </a>
+
+      <a href="images/people5.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people5t.jpg" alt="">
+        </figure>
+      </a>
+
+      <a href="images/people6.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people6t.jpg" alt="">
+        </figure>
+      </a>
+
+      <a href="images/people7.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people7t.jpg" alt="">
+        </figure>
+      </a>
+
+      <a href="images/people8.jpg" data-fancybox="group1">
+        <figure>
+          <img src="images/people8t.jpg" alt="">
+        </figure>
+      </a>
+
+
+
+      </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="js/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('#gallery').masonry({
+        gutter: 0
+      });
+
+      $("[data-fancybox]").fancybox();
+    });
+    </script>
+  </body>
+</html>
